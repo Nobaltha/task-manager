@@ -1,0 +1,6 @@
+<h1>Your habit tracker</h1>
+<h2>Add your habits and track them</h2>
+<% @tasks.each do |task|  %>
+  <%= task.title %>
+<% end %>
+<%= link_to "Add a task", new_task_path %>
